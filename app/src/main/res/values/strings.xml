@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">VeggieFood</string>
+    <string name="str_login_your_account">Login Your Account</string>
+    <string name="str_username">Email Address</string>
+    <string name="str_password">Password</string>
+    <string name="str_login">Login</string>
+    <string name="str_register">Signup</string>
+    <string name="str_delete_account">Delete Account</string>
+    <string name="str_update_profile">Update Profile</string>
+    <string name="str_dont_have_an_account">Don\'t have an account?</string>
+    <string name="str_forgot_password">Forgot Password?</string>
+    <string name="str_create_an_account">Create An Account</string>
+    <string name="str_firstname">First Name</string>
+    <string name="str_last_name">Last Name</string>
+    <string name="str_phone_number">Phone Number</string>
+    <string name="str_you_have_already_an_account">You have already an account?</string>
+    <string name="str_confirm_password">Confirm Password</string>
+
+    <string name="str_get_price">Get Price</string>
+
+    <string name="forgot_password">Forgot Password</string>
+
+    <string name="str_track_order">Track Order</string>
+
+    <string name="str_order_history">Order History</string>
+
+    <string name="str_order_detail">Order Detail</string>
+
+    <string name="str_address">Address</string>
+    <string name="str_state">State</string>
+    <string name="str_city">City</string>
+    <string name="str_pincode">Pincode</string>
+
+    <string name="str_search">Search</string>
+
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="str_my_profile">My Profile</string>
+
+    <string name="str_shipping_details">Shipping Details</string>
+
+    <string name="str_checkout">Checkout</string>
+
+    <string name="str_select_payment_method">Select Payment Method</string>
+    <string name="str_cod">COD</string>
+    <string name="str_online">Online</string>
+
+    <string name="str_my_cart">My Cart</string>
+
+    <string name="str_change_password">Change Password</string>
+    <string name="str_home">Home</string>
+    <string name="str_profile">My Profile</string>
+    <string name="str_aboutus">About Us</string>
+    <string name="str_termsconditions">Terms &amp; Conditions</string>
+    <string name="str_logout">Logout</string>
+
+
+    <string name="str_old_password">Old Password</string>
+    <string name="str_new_password">New Password</string>
+    <string name="str_confirm_new_password">Confirm New Password</string>
+
+    <string name="str_product_detail">Product Detail</string>
+    <string name="str_error_first_name">Please enter first name</string>
+    <string name="str_error_last_name">Please enter last name</string>
+    <string name="str_error_confirm_password">Please enter confirm password</string>
+    <string name="str_error_password_confirm_password">Password and Confirm Password does not match</string>
+    <string name="str_error_valid_phone_number">Please enter valid phone number</string>
+    <string name="str_error_email_address">Please enter email address</string>
+    <string name="str_error_valid_email_address">Please enter valid email address</string>
+    <string name="str_error_password">Please enter password</string>
+    <string name="str_error_enter_address">Please enter address</string>
+    <string name="str_error_enter_state">Please enter state</string>
+    <string name="str_error_enter_city">Please enter city</string>
+    <string name="str_error_enter_pincode">Please enter pincode</string>
+    <string name="str_error_old_password">Please enter old password</string>
+    <string name="str_error_new_password">Please enter new password</string>
+    <string name="str_error_confirm_new_password">Please enter confirm new password</string>
+    <string name="str_error_internet_connections">Please check your internet connections</string>
+
+</resources>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/str_home" />
+
+
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/ic_newprofile"
+        android:title="@string/str_my_profile" />
+
+
+    <item
+        android:id="@+id/menu_changepassword"
+        android:icon="@drawable/changepassword"
+        android:title="@string/str_change_password" />
+
+    <item
+        android:id="@+id/menu_orderhistory"
+        android:icon="@drawable/ic_orderhistory"
+        android:title="@string/str_order_history" />
+
+    <item
+        android:id="@+id/menu_trackorder"
+        android:icon="@drawable/track"
+        android:title="@string/str_track_order" />
+
+
+    <item
+        android:id="@+id/menu_mycart"
+        android:icon="@drawable/ic_cart"
+        android:title="@string/str_my_cart" />
+
+
+    <item
+        android:id="@+id/menu_aboutus"
+        android:icon="@drawable/ic_aboutus"
+        android:title="@string/str_aboutus" />
+
+    <item
+        android:id="@+id/menu_termsconditions"
+        android:icon="@drawable/termsconditions"
+        android:title="@string/str_termsconditions" />
+
+
+    <item
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/logout"
+        android:title="@string/str_logout" />
+
+
+</menu>
