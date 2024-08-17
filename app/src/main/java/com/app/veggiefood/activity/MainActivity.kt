@@ -100,6 +100,10 @@ class MainActivity : AppCompatActivity(), ProductAdapter.onItemClick {
             startActivity(Intent(mContext, SearchActivity::class.java))
         }
 
+        binding.ivNotifications.setOnClickListener {
+            startActivity(Intent(mContext, NotificationActivity::class.java))
+        }
+
         binding.acCategory.setOnTouchListener { v, event ->
             binding.acCategory.showDropDown()
             false

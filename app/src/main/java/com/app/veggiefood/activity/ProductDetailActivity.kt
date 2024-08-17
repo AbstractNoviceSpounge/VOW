@@ -5,6 +5,7 @@ import android.content.Intent
 import android.graphics.Paint
 import android.os.Bundle
 import android.text.Html
+import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.view.View.OnTouchListener
@@ -94,6 +95,7 @@ class ProductDetailActivity : AppCompatActivity() {
         binding.tvGetPrice.setOnClickListener {
             if (isNetworkAvailable(mContext)) {
                 if (isValidate()) {
+                    Log.e("variationId", "=" + variationId.toString())
                     viewModel.getCalculatePrice(
                         CalculatePriceRequest(
                             variationId.toString(),
@@ -258,6 +260,14 @@ class ProductDetailActivity : AppCompatActivity() {
         stringVariationList.clear()
         for (i in 0 until variationList.size) {
             stringVariationList.add(variationList[i].variation)
+        }
+
+        try {
+
+            binding.acVariation.setText(stringVariationList[0])
+            variationId = variationList[0].id
+        } catch (e: Exception) {
+            Log.e("Error", "=" + e.message)
         }
 
         val arrayAdapter: CustomArrayAdapter =

@@ -6,7 +6,9 @@ import com.app.veggiefood.model.request.CartRequest
 import com.app.veggiefood.model.request.ChangePasswordRequest
 import com.app.veggiefood.model.request.DeleteCartRequest
 import com.app.veggiefood.model.request.DeleteUserRequest
+import com.app.veggiefood.model.request.ForgotPasswordRequest
 import com.app.veggiefood.model.request.LoginRequest
+import com.app.veggiefood.model.request.NotificationRequest
 import com.app.veggiefood.model.request.PlaceOrderRequest
 import com.app.veggiefood.model.request.ProfileRequest
 import com.app.veggiefood.model.request.SignupRequest
@@ -19,7 +21,9 @@ import com.app.veggiefood.model.response.CartResponse
 import com.app.veggiefood.model.response.CategoryResponse
 import com.app.veggiefood.model.response.CountCartResponse
 import com.app.veggiefood.model.response.DeleteCartResponse
+import com.app.veggiefood.model.response.ForgotPasswordResponse
 import com.app.veggiefood.model.response.LoginResponse
+import com.app.veggiefood.model.response.NotificationResponse
 import com.app.veggiefood.model.response.OrderResponse
 import com.app.veggiefood.model.response.PlaceOrderResponse
 import com.app.veggiefood.model.response.ProductDetailResponse
@@ -116,6 +120,15 @@ interface ApiService {
 
     @GET("my_api/products/search")
     suspend fun getSearchProduct(
-        @Query("query")query:String
-    ):Response<SearchResponse>
+        @Query("query") query: String
+    ): Response<SearchResponse>
+
+    @POST("my_api/checkCustomerEmail")
+    suspend fun doForgotPassword(@Body request: ForgotPasswordRequest):
+            Response<ForgotPasswordResponse>
+
+    @POST("my_api/getNotification")
+    suspend fun getNotifications(
+        @Body request: NotificationRequest
+    ): Response<NotificationResponse>
 }

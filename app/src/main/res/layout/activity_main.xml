@@ -78,11 +78,11 @@
 
 
                 <FrameLayout
+                    android:layout_toStartOf="@id/ivNotifications"
                     android:id="@+id/cart"
                     style="?attr/actionButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:clipToPadding="false"
                     android:focusable="true">
@@ -110,6 +110,20 @@
                         android:visibility="gone" />
 
                 </FrameLayout>
+
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/ivNotifications"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_notifications" />
+
 
             </RelativeLayout>
 
