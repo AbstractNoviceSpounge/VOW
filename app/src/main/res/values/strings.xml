@@ -16,6 +16,8 @@
     <string name="str_you_have_already_an_account">You have already an account?</string>
     <string name="str_confirm_password">Confirm Password</string>
 
+    <string name="str_share">Share</string>
+
     <string name="str_notifications">Notifications</string>
 
     <string name="str_get_price">Get Price</string>

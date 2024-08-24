@@ -48,6 +48,12 @@
 
 
     <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/str_share" />
+
+
+    <item
         android:id="@+id/menu_logout"
         android:icon="@drawable/logout"
         android:title="@string/str_logout" />

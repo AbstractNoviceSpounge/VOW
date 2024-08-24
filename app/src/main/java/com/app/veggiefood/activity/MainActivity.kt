@@ -205,6 +205,25 @@ class MainActivity : AppCompatActivity(), ProductAdapter.onItemClick {
                 R.id.menu_mycart -> {
                     startActivity(Intent(mContext, MyCartActivity::class.java))
                 }
+                R.id.menu_share->{
+                    try {
+                        val shareIntent = Intent(Intent.ACTION_SEND)
+                        shareIntent.type = "text/plain"
+                        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "")
+                        var shareMessage = "\nLet me recommend you this application\n\n"
+                        shareMessage =
+                            """
+                            ${shareMessage + "https://play.google.com/store/apps/details?id=" + packageName}
+                            
+                            
+                            """.trimIndent()
+                        shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)
+                        startActivity(Intent.createChooser(shareIntent, "choose one"))
+                    } catch (e: Exception) {
+                        //e.toString();
+                    }
+
+                }
 
                 R.id.menu_logout -> {
                     logoutDialog()
